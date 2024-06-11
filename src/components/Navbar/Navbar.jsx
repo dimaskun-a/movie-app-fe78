@@ -2,9 +2,9 @@
  * Import CSS Module Navbar.
  * Disimpan di object styles.
  */
+import { Link } from "react-router-dom";
 import styles from "./Navbar.module.css";
 // Import Link dari React Router
-import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
@@ -20,7 +20,7 @@ function Navbar() {
            */}
           <ul className={styles.navbar__list}>
             <li className={styles.navbar__item}>
-              <Link to="/">Home</Link>
+              <Link to='/'>Home</Link>
             </li>
             <li className={styles.navbar__item}>
               <Link to="/movie/create">Add Movie</Link>

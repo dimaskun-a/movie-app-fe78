@@ -5,6 +5,7 @@ import AddMovieForm from './components/AddMovieForm/AddMovieForm';
 import Hero from './components/Hero/Hero';
 import Movies from './components/Movies/Movies';
 import data from './utils/constants/data';
+import Layout from './Layout';
 
 /**
  * Buat Component Home
@@ -19,11 +20,11 @@ const [movies, setMovies] = useState(data);
 
 // Kirim state sebagai props ke Component Movies dan AddMovieForm
 return (
-  <div>
+  <Layout>
     <Hero />
     <Movies movies={movies} setMovies={setMovies} />
     <AddMovieForm movies={movies} setMovies={setMovies} />
-  </div>
+  </Layout>
 );
 }
 
